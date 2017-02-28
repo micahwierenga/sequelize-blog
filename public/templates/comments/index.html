@@ -1,0 +1,23 @@
+<div class="comments">
+  <div class="row">
+  <h2>Comments</h2>
+
+  <a class="btn btn-default navbar-btn" href="/comments/new">Add Comment</a>
+  <hr>
+  </div>
+  <div class="row" ng-repeat="comment in commentsController.allComments">
+    <p><a href="/comments/{{comment.id}}"><strong>{{comment.commenter_username}}</strong></a></p>
+    <p><a href="/comments/{{comment.id}}">{{comment.content}}</a></p>
+    <table>
+    <tr>
+      <td><a class="btn btn-default navbar-btn" href="/comments/{{comment.id}}/edit">Edit</a></td>
+      <td>
+        <form ng-submit="commentsController.deleteComment(comment)">
+          <button type="button" class="btn btn-default">Delete</button>
+        </form>
+      </td>
+    </tr>
+    </table>
+    <p></p>
+  </div>
+</div>

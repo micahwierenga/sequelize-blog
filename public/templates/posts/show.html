@@ -1,0 +1,13 @@
+<div class="row">
+	<h3>{{postController.onePost.title}}</h3>
+	<p>{{postController.onePost.content}}</p>
+	<p><strong>{{postController.onePost.user.username}}</strong></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h4>{{postController.onePost.comments.length}} COMMENT(S)</h4>
+	<hr>
+	<div ng-repeat="comment in postController.onePost.comments">
+		<p><strong>{{comment.commenter_username}}</strong></p>
+		<p>{{comment.content}}</p>
+	</div>
+</div>

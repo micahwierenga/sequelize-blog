@@ -1,0 +1,20 @@
+<div class="users">
+  <div class="row">
+  <h2>Users</h2>
+
+  <a class="btn btn-default navbar-btn" href="/users/new">Add User</a>
+  <hr>
+  </div>
+  <div class="row" ng-repeat="user in usersController.allUsers">
+    <h3><a href="/users/{{user.user_id}}">{{user.username}}</a></h3>
+    <table>
+    <tr>
+      <td><a class="btn btn-default navbar-btn" href="/users/{{user.user_id}}/edit">Edit</a></td>
+      <td>
+        <button type="button" class="btn btn-default" ng-click="usersController.deleteUser(user)">Delete</button>
+      </td>
+    </tr>
+    </table>
+    <p></p>
+  </div>
+</div>

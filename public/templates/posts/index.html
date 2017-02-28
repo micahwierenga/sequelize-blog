@@ -1,0 +1,22 @@
+<div class="posts">
+  <div class="row">
+  <h2>Posts</h2>
+
+  <a class="btn btn-default navbar-btn" href="/posts/new">Add Post</a>
+  <hr>
+  </div>
+  <div class="row" ng-repeat="post in postsController.allPosts">
+    <h3><a href="/posts/{{post.id}}">{{post.title}}</a></h3>
+    <p>{{post.content}}</p>
+    <p><strong>{{post.user.username}}</strong></p>
+    <table>
+    <tr>
+      <td><a class="btn btn-default navbar-btn" href="/posts/{{post.id}}/edit">Edit</a></td>
+      <td>
+        <button type="button" class="btn btn-default" ng-click="postsController.deletePost(post)">Delete</button>
+      </td>
+    </tr>
+    </table>
+    <p></p>
+  </div>
+</div>

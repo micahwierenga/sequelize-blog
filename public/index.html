@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Tun.r</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+ 
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-route/angular-route.min.js"></script>
+   <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/js/client.js"></script>  
+  <script src="/js/controllers/user.js"></script> 
+  <script src="/js/controllers/post.js"></script> 
+  <script src="/js/controllers/comment.js"></script> 
+</head>
+<body ng-app="sequelizeBlogApp">
+  <header>
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Sequelize Blog</a>
+      </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/users">Users</a></li>
+            <li><a href="/posts">Posts</a></li>
+            <!-- <li><a href="/comments">Comments</a></li> -->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  </header>
+  <main class="main-container">
+    <ng-view></ng-view>
+  </main>
+  <footer>
+    <!-- &copy; Tun.r -->
+  </footer>
+</body>
+</html>

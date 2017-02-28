@@ -1,0 +1,6 @@
+<div class="row" ng-repeat="post in postsController.allPosts">
+	<h3><a href="/posts/{{post.id}}">{{post.title}}</a></h3>
+	<p>{{post.content}}</p>
+	<p><strong><a href="/users/{{post.user.id}}">{{post.user.username}}</a></strong></p>
+	<p></p>
+</div>

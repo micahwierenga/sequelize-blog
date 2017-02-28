@@ -1,0 +1,13 @@
+<h2>Edit Post</h2>
+
+<form ng-submit="postEditController.updatePost()">
+  <div class="form-group">
+    <label for="post-id">Title</label>
+    <input ng-model="postEditController.updatedPost.title" type="id" class="form-control" id="post-id">
+  </div>
+  <div class="form-group">
+    <label for="post-username">Post</label>
+    <textarea ng-model="postEditController.updatedPost.content" class="form-control" id="post-username" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>

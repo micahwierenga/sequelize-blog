@@ -66,7 +66,7 @@ Sequelize lets us define these relationships in two steps:
 
 When defining associations, the foreign key is added to the target model. Consider the following syntax:
 
-`sourceModel.hasMany(targetModel);`
+`sourceModel.hasMany(targetModel);`\s\s
 `targetModel.belongsTo(sourceModel);`
 
 Example: `User.hasMany(Post);`
@@ -88,4 +88,5 @@ app.get('/api/users', function index(req, res) {
 ## Resources
 
 - [Sequelize Docs](http://docs.sequelizejs.com/en/v3/)
-- [More about sync](http://sequelize.readthedocs.io/en/latest/api/sequelize/#sync)
+- [General Sequelize Tutorial (Good, but Incomplete)](https://www.youtube.com/watch?v=qsDvJrGMSUY&list=PL5ze0DjYv5DYBDfl0vF_VRxEu8JdTIHlR)
+- [Sequelize Associations Tutorial](http://lorenstewart.me/2016/09/12/sequelize-table-associations-joins/)

@@ -66,7 +66,8 @@ Sequelize lets us define these relationships in two steps:
 
 When defining associations, the foreign key is added to the target model. Consider the following syntax:
 
-`sourceModel.hasMany(targetModel);`\s\s
+`sourceModel.hasMany(targetModel);`
+\s\s
 `targetModel.belongsTo(sourceModel);`
 
 Example: `User.hasMany(Post);`
